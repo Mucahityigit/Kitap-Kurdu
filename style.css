@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eceff1;
+}
+/* ----------------- HEADER AREA ---------------------*/
+
+#header-container{
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+   box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+   z-index: 3;
+}
+#header{
+    display: block;
+    width: 1270px;
+    height: 100%;
+    margin: 0 auto;
+}
+#logo-container{
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px;
+    float: left;
+    height: 100%;    
+}
+#logo-text{
+    text-decoration: none;
+    color:#3c485e;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+}
+#logo-span{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+#search-container{
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 100%;
+    padding: 10px 0px;
+    margin-left: 80px;
+    float: left;
+}
+#search-input{
+    width: 100%;
+    height:50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    background: none;
+    padding-left: 10px;
+    padding-right: 50px;
+    color: #3c485e;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+#search-icon{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-size: 27px;
+    color:#3c485e;
+    cursor: pointer;
+}
+#menu-container{
+    display: inline-block;
+    width: 585px;
+    height: 100%;
+    float: right;
+}
+
+#menu-list{
+    width: 585px;
+    height: 100%;
+    padding:25px 0px;
+}
+
+.menu-item{
+    float: left;
+    margin-left: 102px;
+    list-style: none;
+}
+.menu-item-a{
+    text-decoration: none;
+    color: #3c485e;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    transition: .3s;
+}
+.menu-item-a:hover,.menu-item-a:focus{
+    color:#cba0aa;
+}
+
+/* ----------------- MAİN CONTAİNER ---------------------*/
+
+#main-container{
+    position: relative;
+    display: flex;
+    width: 1270px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+/*------------------ MAİN PAGE-------------------------- */
+
+#main-page{
+    position: relative;
+    display: inline-block;
+    width: 900px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    height: 500px;
+    margin: 18px 0px;
+    margin-left: 18px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+
+.card-content{
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.image-area{
+    display: inline-block;
+    width:150px;
+    height: 100%;
+    background-color: sandybrown;
+}
+.image-area img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-information{
+    display: inline-block;
+    width:250px;
+    height: 100%;
+    padding: 10px;
+}
+
+.information{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 12px 0px;
+    line-height: 30px;
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #340b0b;
+    border: none;
+    border-bottom: 1px dashed #340b0b;
+}
+.information span{
+    color: rgba(0,0,0,.7);
+    font-size: 13px;
+}
+
+.card-text{
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-align: justify;
+  padding-top: 30px;
+}
+.content-text{
+    display: block;
+    width: 100%;
+    height: 180px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #6c767a;
+    line-height: 1.9;
+    letter-spacing: .5px;
+ 
+}
+
+.btn{
+    display: block;
+    width: 170px;
+    height: 40px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 220px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+.btn:hover{
+    background-color: #3c485e;
+    box-shadow: 0px 0px 10px rgba(255,255,255);
+}
+ .card-text a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color:#3c485e;
+    transition: .5s;
+}
+.btn:hover{
+    color: white;
+}
+
+/* ----------------- MAİN CATEGORY ---------------------*/
+
+#main-category{
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    margin-left: 15px;
+}
+
+#search-area{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+#search-area #search-area-input{
+    display: block;
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    padding-right: 45px;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #3c485e;
+    outline: none;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+#search-area #search-area-icon{
+    position: absolute;
+    right: 42px;
+    top: 20px;
+    font-size: 27px;
+    color:#3c485e;
+    cursor: pointer;
+}
+
+#links-container{
+    display: block;
+    width: 100%;
+    height: 130;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+#links-container .links{
+    margin-left: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+#most-read{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-right: 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+#most-read a{
+    text-decoration: none;
+}
+.title{
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    text-align: center;
+    color: #3c485e;
+    margin-bottom: 16px;
+}
+.okunanlar-sirasi{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 12px;
+    transition: .2s;
+    cursor: pointer;
+}
+.okunanlar-sirasi::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    width: 7px;
+    height: 100%;
+}
+ #bir::after{
+   background-color: #00a1e5;
+}
+ #iki::after{
+   background-color: #007a7b;
+}
+
+ #uc::after{
+   background-color: #62bc99;
+}
+
+ #dort::after{
+   background-color: #2f3e5e;
+}
+
+
+.okunanlar-sirasi:hover{
+    background-color:#eceff1;
+}
+
+.okunanlar-sirasi .image{
+    width: 80px;
+    height: 100px;
+}
+.okunanlar-sirasi .image img{
+    width: 100%;
+    height: 100%;
+}
+.bilgi-bolumu{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-left: 17px;
+}
+.okunanlar-sirasi .kitap-adi,.okunanlar-sirasi .yazar-adi{
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #3c485e;
+    margin-top: 10px;
+}
+.okunanlar-sirasi .kitap-adi{
+    font-weight: bold;
+}
+.okunma-sayisi{
+    position: absolute;
+    bottom: 5px;
+    right: 14px;
+    color: #6c767a;
+    font-size: 15px;
+}
+.okunma-sayi-degeri{
+    margin-left: 10px;
+}
+
+/*----------- SHARE AREA --------------*/
+
+#share-area{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-top: 20px;
+}
+
+#share-area div{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #3c485e;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+#share-area div:hover{
+    opacity: .8;
+}
+
+#share-area i{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    float: right;
+}
+#facebook i{
+    color: #083bbe;
+}
+#twitter i{
+    color: #2ca5dc;
+    
+}
+#instagram i{
+    color: #f74b20;
+    
+}
+#mail i{
+    color: #f74b20;
+}
+
+#facebook{
+    padding: 15px;
+    background: linear-gradient(to right,rgba(64,100,173,1),rgba(64,100,173,.2));
+}
+#twitter{
+    padding: 15px;
+    background: linear-gradient(to right,rgba(45,165,220,1),rgba(45,165,220,.2));
+}
+#instagram{
+    padding: 15px;
+    background: linear-gradient(to right,rgba(247,64,34,1),rgba(247,64,34,.2));
+}
+#mail{
+    padding: 15px;
+    background: linear-gradient(to right,rgba(247,64,34,1),rgba(247,64,34,.2));
+}
+
+/*------------- REKLAM ALANI ---------------*/
+
+#reklamAlani{
+    display: inline-block;
+    width: 100%;
+    height: 517px;
+    padding-right: 0;
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    text-align: center;
+    line-height: 516px;
+    font-size: 35px;
+    font-family: 'Merriweather', serif;
+     color: #3c485e;
+}
+
+#footer-container{
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+
+#footer-alani{
+    display: block;
+    width: 1270px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#footer-alani div{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+#bolum1,#bolum2{
+    border-right: 1px dashed rgba(0,0,0,.5);
+}
+
+#footer-alani div ul{
+   display: block;
+    margin-top: 60px;
+}
+
+#footer-alani div ul li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#footer-alani div ul li a{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+     color: #3c485e; 
+}
+
+/*------------- İÇERİK BÖLÜMÜ -----------------*/
+
+.icerik-baslik{
+    display: block;
+    width: 700px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.icerik-baslik .card-content{
+    display: flex;
+    height: auto;
+}
+
+.icerik-baslik .image-area{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.icerik-baslik #icerik{
+    font-family: 'Merriweather', serif;
+     color: #3c485e;
+    margin-top: 150px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+#baslik{
+    display: block;
+    text-align: center;
+    padding-top: 100px
+}
+#baslik h1{
+     font-family: 'Merriweather', serif;
+     color: #3c485e;
+}
+
+.icerik-baslik #tarih{
+    float: right;
+    font-family: 'Merriweather', serif;
+     color: #3c485e;
+    font-size: 13px;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: bold
+}
+
+.icerik-baslik #tarih #tarihayar{
+    margin-left: 15px;
+    font-weight: 100;
+    color: rgba(0,0,0,.7)
+}
+
+.koyu{
+    font-family: 'Merriweather', serif;
+     color: #3c485e;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
